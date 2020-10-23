@@ -86,7 +86,7 @@ for element in str1 {
 var bool = str2 == str1
 
 print(bool)
-*/
+
 
 // 9. You are given a string stored in variable problem. Write code so that you print each word of the string on a new line.
 
@@ -109,3 +109,41 @@ let words = problem.split(separator: " ")
 for word in words {
   print(word)
 }
+
+
+// 10. You are given a string stored in variable problem. Write code that prints the longest word in the string.
+
+let problem = "find the longest word in the problem description "
+var longWord = ""
+var longestWord = ""
+
+//for element in problem {
+////    longWord.append(element)
+//
+//    if element == " " {
+//        if longWord.count > longestWord.count {
+//            longestWord = longWord
+////        print("space")
+//        }
+//        longWord = ""
+//    }
+//    longWord.append(element)
+////    print(longWord)
+//}
+//print(longestWord)
+
+//pursuit solution
+var problem2 = problem.split(separator: " ")
+//print(problem2)
+var longerWord = ""
+
+for word in problem2 {
+    if word.count > longerWord.count {
+        longerWord = String(word)
+    }
+}
+print(longerWord)
+ 
+ */
+
+

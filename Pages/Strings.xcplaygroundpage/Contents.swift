@@ -146,4 +146,20 @@ print(longerWord)
  
  */
 
+// 11. Given a string in English, create a tuple containing the number of vowels and consonants.
+
+let vowels = "aeiou"
+let consonants = "bcdfghjklmnpqrstvwxyz"
+let input = "Count how many vowels I have!"
+
+// 12. Given a string of words separated by a " ". Write code that prints out the length of the last word.
+//If there is no last word print out "No last word".
+//Example: Input: "How are you doing this Monday?"
+//Output: 7
+
+var str = "How are you doing this Monday?"
+var splitStr = str.split(separator: " ")
+var lastWordLength = Int()
+
+
 

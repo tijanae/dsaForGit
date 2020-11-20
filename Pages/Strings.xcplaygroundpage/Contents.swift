@@ -144,7 +144,7 @@ for word in problem2 {
 }
 print(longerWord)
  
- */
+
 
 // 11. Given a string in English, create a tuple containing the number of vowels and consonants.
 
@@ -160,6 +160,133 @@ let input = "Count how many vowels I have!"
 var str = "How are you doing this Monday?"
 var splitStr = str.split(separator: " ")
 var lastWordLength = Int()
+
+print(splitStr)
+
+if splitStr.last != nil {
+    var last = splitStr.last
+    for element in last! {
+        lastWordLength += 1
+    }
+    print(lastWordLength)
+} else {
+    print("No last word")
+}
+//pursuit solution
+
+let str = "How are you doing this Monday?"
+
+let words = str.split(separator: " ")
+
+if let lastWord = words.last {
+  print(lastWord.count) // 7
+} else {
+  print("No last word")
+}
+
+*/
+
+// 13.
+
+// twitter hackerrank
+//
+//var str = "10 2 4, 12 2 2 "
+//var cleaned = str.split(separator: " ")
+//print(cleaned)
+//var arr = Int(cleaned[0]) ?? 0
+//print(arr)
+
+//while scen.count >= 0 {}
+//for i in 0...scen.count{
+//        print(scen)
+//    scen.removeFirst()
+//    }
+/*
+var scen = ["10 2 5", "12 4 4", "6 2 2"]
+var scen2 = ["8 4 2", "7 2 3"]
+
+
+for i in scen2 {
+    let info = i.split(separator: " ")
+//    print(info)
+    var budget = Int(info[0]) ?? 0
+    var cost = Int(info[1]) ?? 0
+    let freebieCost = Int(info[2]) ?? 0
+
+ 
+    var withClient = 0
+    var recievedContainers = Int()
+    var newAmt = Int()
+
+    
+    while budget >= cost {
+        budget = budget/cost
+        recievedContainers = budget
+        withClient = cost % budget
+        cost = freebieCost
+
+        
+        if budget >= cost {
+            newAmt = budget + withClient
+
+            recievedContainers += newAmt / cost
+            print(recievedContainers)
+            budget = budget / cost
+        } else {
+            print(recievedContainers)
+        }
+  
+    }
+}
+*/
+
+
+var people = 8
+var groups = 4
+var groupCreated = [Int]()
+
+var arr = [Int]()
+
+var arrCount = groups - 1
+var largestGroup = people - arrCount
+var remainingPeople = 0
+var remainingGroups = arrCount
+
+while arrCount > 0 {
+
+
+    remainingPeople = people - largestGroup
+    if arr.isEmpty {
+        arr.insert(largestGroup, at: 0)
+    }
+    if remainingPeople == remainingGroups {
+        arr.insert(1, at: 0)
+        remainingPeople = remainingPeople - 1
+        remainingGroups = remainingGroups - 1
+    } else {
+        arr.insert(1, at: 0)
+    }
+    arrCount = arrCount - 1
+
+    }
+print(arr)
+
+//groupCreated.insert(contentsOf: arr, at: 0)
+//groupCreated.insert(0, at: 0)
+//
+//
+//print("our groups are \(groupCreated)")
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -4,5 +4,11 @@
         <page name='Strings'/>
         <page name='Arrays'/>
         <page name='Queues'/>
+        <page name='DictionaryLesson'/>
+        <page name='Dict Hmwk'/>
+        <page name='Linked Lists'/>
+        <page name='freebie'/>
+        <page name='binary trees'/>
+        <page name='setHmwk'/>
     </pages>
 </playground>

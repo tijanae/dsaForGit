@@ -26,6 +26,33 @@ var numbersWithNoDuplicates = [Int]()
  }
 
  print(numbersWithNoDuplicates) // [1, 2, 4, 6, 7, 8]
- */
+ 
 
 print(numbersWithNoDuplicates)
+*/
+
+// 2. Create a new array scoresThatAppearOnce that has all the elements from scores that appear exactly once. It should be in the same order as the original.
+
+let scores = [1, 77, 83, 32, 77, 77, 83, 32, 99]
+
+var scoresThatAppearOnce = [Int]()
+
+var arrSet: Set<Int> = []
+
+var scoreDict = [Int : Int]()
+
+for num in scores {
+    
+    if !arrSet.contains(num) {
+        scoreDict[num] = 1
+        arrSet.insert(num)
+        
+    } else {
+        scoreDict[num]! += 1
+    }
+    
+}
+
+
+print(scoreDict)
+

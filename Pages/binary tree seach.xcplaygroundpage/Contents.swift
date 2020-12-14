@@ -58,3 +58,16 @@ insert(treeNode, 5)
 insert(treeNode, 11)
 insert(treeNode, 9)
 insert(treeNode, 16)
+
+
+func minValue(_ root: BinaryTreeNode?) -> Int {
+//    guard let _ = root else { return }
+//    if let leftChild = root?.leftChild {
+//      inOrderTraversal(leftChild)
+//    }
+//    if let min = root?.leftChild == nil {
+//        return root?.value
+//    }
+    
+  return 0
+}

@@ -6,7 +6,7 @@ import Foundation
 // heaps are satisfied  when the root is min or root is max
 
 // objective is to create a heap and retrieve any child
-
+/*
 struct Heap {
 //    data structure for heap nodes are arrays
     
@@ -42,3 +42,4 @@ struct Heap {
         return parentIndex
     }
 }
+ */

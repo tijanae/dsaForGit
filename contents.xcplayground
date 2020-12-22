@@ -13,7 +13,10 @@
         <page name='setHmwk'/>
         <page name='Optionals'/>
         <page name='func Hmwk'/>
-        <page name='Untitled Page 2'/>
+        <page name='freebie2'/>
         <page name='Heaps'/>
+        <page name='closures'/>
+        <page name='closureHmwk'/>
+        <page name='tuples'/>
     </pages>
 </playground>
